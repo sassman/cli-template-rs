@@ -1,0 +1,23 @@
+[package]
+name = "{{crate_name}}"
+description = "{{description}}"
+version = "0.0.1"
+authors = ["{{authors}}"]
+edition = "2018"
+license = "GPL-3.0-only"
+readme = "README.md"
+keywords = ["commandline"]
+categories = ["command-line-utilities"]
+repository = "https://github.com/sassman/{{crate_name}}-rs"
+exclude = [".ci/*", ".gitignore", ".travis.yml"]
+
+[badges]
+travis-ci = { repository = "sassman/{{crate_name}}-rs", branch = "master" }
+maintenance = { status = "actively-developed" }
+
+[dependencies]
+clap = "2.33"
+
+[[bin]]
+name = "{{crate_name | split: "-cli" | first}}"
+path = "src/main.rs"
