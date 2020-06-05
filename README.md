@@ -1,6 +1,6 @@
 # {{project-name}} CLI
 
-TODO: a useful minimal description would be nice
+{{project-description}}
 
 ## What does {{project-name}}?
 
@@ -13,25 +13,25 @@ In short, {{project-name}} solves the problem of ...
 To install the {{project-name}}, you just need to run
 
 ```bash
-cargo install --force {{crate_name}}
+cargo install --force {{project-name}}
 ```
 
-(--force just makes it update to the latest `{{crate_name}}` if it's already installed)
+(--force just makes it update to the latest `{{project-name}}` if it's already installed)
 
-_Note_ the binary is called `{{crate_name | split: "-cli" | first}}` (without `-cli`)
+**Note** the binary is called `{{project-name | split: "-cli" | first}}` (without `-cli`)
 
-to verify if the installation was successful, you can run `which {{crate_name | split: "-cli" | first}}` that should output similar to
+to verify if the installation was successful, you can run `which {{project-name | split: "-cli" | first}}` that should output similar to
 
 ```sh
-$HOME/.cargo/bin/{{crate_name | split: "-cli" | first}}
+$HOME/.cargo/bin/{{project-name | split: "-cli" | first}}
 ```
 
 ### Usage
 
 ```sh
-$ {{crate_name | split: "-cli" | first}} --help
+$ {{project-name | split: "-cli" | first}} --help
 
-TODO: all the out put goes here
+TODO: --help output goes here
 ```
 
 ## License
