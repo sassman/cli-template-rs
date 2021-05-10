@@ -1,0 +1,4 @@
+[placeholders.project-description]
+type = "string"
+prompt = "Any Project Description?"
+default = "a tool that ..."
